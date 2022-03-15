@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE) // 여러가지 바코드중에 특정 바코드 설정 가능
             integrator.setPrompt("QR 코드를 스캔하여 주세요:)") // 스캔할 때 하단의 문구
             integrator.setCameraId(0) // 0은 후면 카메라, 1은 전면 카메라
-            integrator.setBeepEnabled(true) // 바코드를 인식했을 때 삑 소리유무
+            integrator.setBeepEnabled(false) // 바코드를 인식했을 때 삑 소리유무
             integrator.setBarcodeImageEnabled(false) // 스캔 했을 때 스캔한 이미지 사용여부
             integrator.initiateScan() // 스캔
 
